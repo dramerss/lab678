@@ -17,13 +17,13 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout kodu
+      - name: Checkout codu
         uses: actions/checkout@v2
 
       - name: Instalowanie Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.11'  #
+          python-version: '3.11'  
 
       - name: Instalowanie pip
         run: |
