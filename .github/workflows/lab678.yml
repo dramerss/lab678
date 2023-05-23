@@ -27,11 +27,3 @@ jobs:
         pip install pyyaml
         pip install PyQt5
         
-    - name: Tworzenie pliku .exe
-      run: python setup.py build_exe # Замініть setup.py на шлях до вашого скрипта, що створює .exe-файл
-    
-    - name: Завантаження .exe-файлу в артефакти
-      uses: actions/upload-artifact@v3
-      with:
-        name: my-app-exe
-        path: dist/my-app.exe # Замініть dist/my-app.exe на шлях до вашого .exe-файлу в папці dist
